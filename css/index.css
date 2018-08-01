@@ -1,0 +1,370 @@
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	}
+
+a *{
+	display:inline-block;
+	}
+/*这是头部*/
+.header{
+	width: 100%;
+	z-index: 2;
+	position: relative;
+}
+.header img{
+	width: 100%;
+}
+
+/*这是内容的背景设置*/
+.content_all{
+	z-index:1;
+	position: relative;
+    width: 100%;
+    background: url(../images/bg_s.jpg) repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    margin-top: -0.6rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+/*这是内容部分的门栏*/
+.con{
+	width: 100%;
+	text-align: center;
+	padding-top: 0.8rem;
+	}
+.con_one{
+	background: url(../images/bg.png) no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    padding-top: 1.5rem;
+}
+
+.con .con_header{
+	width:90%;
+	margin: 0 auto;
+	padding-left: 0.05rem;
+	z-index: 2;
+	position: relative;
+	pointer-events: none;
+}
+.con .con_header img{
+    width: 100%;  
+}
+
+.con .con_header p{
+	position: absolute;
+	text-align: center;
+	top: 0.6rem;
+	color: #d6201f;
+	padding-left: 0.2rem;
+	font-size: 0.4rem;
+	font-weight: bold;
+	width: 100%;	
+}
+
+/*这是门栏下面的展示部分*/
+.con .part{
+	  margin-top: -3.4rem;
+      text-align: center;
+      z-index: 1;
+      position: relative;
+      
+}
+
+.con .part ul{
+	  display: inline-block;
+      background-color: #E77600;
+      padding-top: 0.08rem;
+      width: 45%;
+      
+}
+
+.con .part ul li{
+	   box-sizing: border-box;
+	   border: 0.08rem solid #E77600;
+	   float: left;
+	   width: 33.33%;
+}
+
+/*这是第一部分的门栏下面的展示内容*/
+.con_one .part ul li {
+	width: 100%;
+	padding: 0;
+}
+
+.con .part ul li .li_img{
+	background-color: white;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+}
+.con .part ul li img{	
+	width: 100%;
+}
+
+
+.con .part ul li .info{
+	width: 100%;
+	height: 0.5rem;
+	display: table;
+	background:#9e1600;
+    color: #ffffff;
+    font-size: 0.23rem;
+    text-align: center;
+    letter-spacing: 0.02rem;
+}
+.con .part ul li .info span{
+	display: table-cell;
+	vertical-align: middle;
+}
+/*这是第三部分的侧边图片*/
+.left{
+	float: left;
+	width: 20%;
+	margin-left: 2.5rem;
+	margin-top:-5.5rem;
+	z-index:-1;
+	position: relative;
+}
+.right{
+	float: right;
+	width: 16%;
+	margin-right:3.2rem;
+	margin-top:-11.5rem;
+	z-index:-1;
+	position: relative;
+}
+
+
+
+.return{
+	width: 26.5%;
+	margin: 0 auto;
+	margin-top: 0.8rem;
+	
+}
+.return img{
+	width: 100%;
+	padding-left: 0.15rem;
+}
+
+
+
+@media screen and (max-width:1010px){
+	.con .part ul{
+	  display: inline-block;
+      background-color: #E77600;
+      padding-top: 0.08rem;
+      width: 50%;
+      
+    }
+	.con .part ul li{
+	   box-sizing: border-box;
+	   border: 0.08rem solid #E77600;
+	   float: left;
+	   width: 50%;
+    }	
+	.con_one .part ul li {
+	width: 100%;
+	padding: 0;
+    }
+	.con .part ul li .info{
+    height: 0.6rem;
+    font-size: 0.33rem;
+    letter-spacing: 0.01rem;
+    font-weight: 100;
+    }
+    
+	.left{
+	float: left;
+	width: 25%;
+	margin-left: 1.5rem;
+	margin-top:-8.5rem;
+	z-index:-1;
+	position: relative;
+}
+  .right{
+	float: right;
+	width: 20%;
+	margin-right:2rem;
+	margin-top:-29.5rem;
+	z-index:-1;
+	position: relative;
+  }	
+}
+
+@media screen and (max-width:785px) {
+.con .con_header{
+	width:99%;	
+}
+.con .part{
+	  margin-top: -3.7rem;
+      text-align: center;
+      z-index: 1;
+      position: relative;
+}
+.con .part ul{
+      width: 65%;  
+}
+.con .con_header p{
+	position: absolute;
+	text-align: center;
+	top: 0.5rem;
+	color: #d6201f;
+	padding-left: 0.2rem;
+	font-size: 0.7rem;
+	font-weight:bold;
+	width: 100%;	
+}
+.con .part ul li .info{
+	height: 1rem;
+    font-size: 0.4rem;
+    font-weight: 300;
+    letter-spacing: 0.01rem;
+}
+	.left{
+	float: left;
+	width: 20%;
+	margin-left: 0.5rem;
+	margin-top:-8.5rem;
+	z-index:-1;
+	position: relative;
+}
+  .right{
+	float: right;
+	width: 18%;
+	margin-right:1rem;
+	margin-top:-38.5rem;
+	z-index:-1;
+	position: relative;
+  }
+}
+
+
+
+@media screen and (max-width: 526px) {
+.con .con_header{
+	width:99%;	
+}
+.con .con_header p{
+	position: absolute;
+	text-align: center;
+	top: 0.5rem;
+	color: #d6201f;
+	padding-left: 0.2rem;
+	font-size: 0.65rem;
+	font-weight: 500;
+	width: 100%;	
+}
+.con .part{
+	  margin-top: -3.7rem;
+      text-align: center;
+      z-index: 1;
+      position: relative;
+}
+.con .part ul{
+      width: 60%;  
+}
+.con .part ul li .info{
+	height: 1.5rem;
+    display: table;
+    width: 100%;
+    font-size: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+.con .part ul li .info span{
+	display:table-cell;
+	vertical-align: middle;
+}
+	.left{
+	float: left;
+	width: 30%;
+	margin-left: 0.5rem;
+	margin-top:-8.5rem;
+	z-index:-1;
+	position: relative;
+}
+  .right{
+	float: right;
+	width: 25%;
+	margin-right:1rem;
+	margin-top:-38.5rem;
+	z-index:-1;
+	position: relative;
+  }
+@media screen and (max-width: 435px){
+	.con .part ul{
+      width: 70%;  
+}
+	.left{
+	float: left;
+	width: 20%;
+	margin-top:-9.5rem;
+	z-index:-1;
+	position: relative;
+}
+  .right{
+	float: right;
+	width: 18%;
+	margin-right:0.5rem;
+	margin-top:-42.5rem;
+	z-index:-1;
+	position: relative;
+  }
+	.con .part ul li .info{
+	height: 1.5rem;
+    display: table;
+    width: 100%;
+    font-size: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+.con .part ul li .info span{
+	display:table-cell;
+	vertical-align: middle;
+}
+@media screen and (max-width: 385px){
+	.con .part ul li .info{
+	height: 1.8rem;
+    display: table;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+}	
+@media screen and (max-width: 350px){
+	.con .part ul li .info{
+	height: 2.5rem;
+    display: table;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+}
+@media screen and (max-width: 325px){
+	.con .part ul li .info{
+	height: 3.2rem;
+    display: table;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+}
+@media screen and (max-width: 260px){
+	.con .part ul li .info{
+	height: 3.78rem;
+    display: table;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+}		
